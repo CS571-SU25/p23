@@ -88,7 +88,7 @@ export function ProjectCard({ project, onApplyRole, onViewDetails }) {
             View Details
           </Button>
           <Button 
-            variant="outline-primary" 
+            variant="secondary" 
             size="sm"
             onClick={() => onApplyRole(project)}
             disabled={project.openRoles.length === 0}
@@ -303,7 +303,7 @@ export function ProjectStatusFilter({ statuses, selectedStatus, onStatusChange }
       <h5>Filter by Status</h5>
       <div className="d-flex flex-wrap gap-2">
         <Button
-          variant={selectedStatus === 'all' ? 'primary' : 'outline-primary'}
+          variant={selectedStatus === 'all' ? 'primary' : 'secondary'}
           size="sm"
           onClick={() => onStatusChange('all')}
         >
@@ -312,7 +312,7 @@ export function ProjectStatusFilter({ statuses, selectedStatus, onStatusChange }
         {statuses.map((status) => (
           <Button
             key={status}
-            variant={selectedStatus === status ? 'primary' : 'outline-primary'}
+            variant={selectedStatus === status ? 'primary' : 'secondary'}
             size="sm"
             onClick={() => onStatusChange(status)}
           >

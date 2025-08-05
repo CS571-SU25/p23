@@ -296,7 +296,7 @@ export function FeedbackFilter({ types, selectedType, onTypeChange }) {
       <h5>Filter Feedback</h5>
       <div className="d-flex flex-wrap gap-2">
         <Button
-          variant={selectedType === 'all' ? 'primary' : 'outline-primary'}
+          variant={selectedType === 'all' ? 'primary' : 'secondary'}
           size="sm"
           onClick={() => onTypeChange('all')}
         >
@@ -305,7 +305,7 @@ export function FeedbackFilter({ types, selectedType, onTypeChange }) {
         {types.map((type) => (
           <Button
             key={type}
-            variant={selectedType === type ? 'primary' : 'outline-primary'}
+            variant={selectedType === type ? 'primary' : 'secondary'}
             size="sm"
             onClick={() => onTypeChange(type)}
           >

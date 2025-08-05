@@ -193,8 +193,12 @@ function About() {
             </p>
             <div className="d-flex gap-3 justify-content-center">
               <LinkContainer to="/join">
-                <button className="btn btn-light btn-lg">
-                  Join Our Community
+              <button className="btn btn-lg" style={{ 
+                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  border: 'none',
+                  color: 'white'
+                }}> 
+                Join Our Community
                 </button>
               </LinkContainer>
               <LinkContainer to="/projects">

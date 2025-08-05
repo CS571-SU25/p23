@@ -288,7 +288,7 @@ function Projects() {
             Qindeel members can propose and lead their own film projects. 
             Submit your concept and recruit your team through the project board.
           </p>
-          <a href="#/join" className="btn btn-light">
+          <a href="#/join" className="btn btn-light btn-lg" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
             Learn More About Leadership Opportunities
           </a>
         </div>

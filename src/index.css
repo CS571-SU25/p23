@@ -4,13 +4,14 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #213547;
-  background-color: #ffffff;
+  color: #277b60;
+  background-color: #0b4480;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 * {
@@ -64,7 +65,7 @@ button {
 }
 
 button:hover {
-  border-color: #1034A6;
+  border-color: #0b4480;
 }
 
 button:focus,

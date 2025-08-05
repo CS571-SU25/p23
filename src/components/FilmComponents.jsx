@@ -7,7 +7,7 @@ export function FilmCard({ film, onViewDetails }) {
       <div className="position-relative">
         <Card.Img 
           variant="top" 
-          src={film.thumbnail || 'https://via.placeholder.com/400x225/6c757d/fff?text=Film+Thumbnail'} 
+          src={film.thumbnail || 'https://yt3.googleusercontent.com/H4yUn1QFoDlVlxQb7wWXvEFD8e-6YE1Gt3SSwGhHx9aEt8QhN6YpNp8jM7A9XUgbwYCpbFZ-=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'} 
           alt={`${film.title} thumbnail`}
           style={{ height: '200px', objectFit: 'cover' }}
         />
@@ -41,7 +41,7 @@ export function FilmCard({ film, onViewDetails }) {
             >
               Watch Film
             </Button>
-            <Button variant="outline-secondary" size="sm">
+            <Button variant="secondary" size="sm">
               Behind the Scenes
             </Button>
           </div>
@@ -146,7 +146,7 @@ export function FilmFilter({ categories, selectedCategory, onCategoryChange }) {
       <h5>Filter by Category</h5>
       <div className="d-flex flex-wrap gap-2">
         <Button
-          variant={selectedCategory === 'all' ? 'primary' : 'outline-primary'}
+          variant={selectedCategory === 'all' ? 'primary' : 'secondary'}
           size="sm"
           onClick={() => onCategoryChange('all')}
         >
@@ -155,7 +155,7 @@ export function FilmFilter({ categories, selectedCategory, onCategoryChange }) {
         {categories.map((category) => (
           <Button
             key={category}
-            variant={selectedCategory === category ? 'primary' : 'outline-primary'}
+            variant={selectedCategory === category ? 'primary' : 'secondary'}
             size="sm"
             onClick={() => onCategoryChange(category)}
           >

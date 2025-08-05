@@ -8,16 +8,24 @@
 }
 
 .bg-primary {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+  background: linear-gradient(135deg, #277b60 0%, #0b4480 100%) !important;
 }
 
-.hover-card {
+.team-card {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.hover-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.team-photo {
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+  transform: scale(1.05);
 }
 
 .timeline {
@@ -67,6 +75,7 @@ html {
 }
 
 .btn {
+  color: white;
   border-radius: 8px;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -75,6 +84,14 @@ html {
 
 .btn:hover {
   transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #0b4480;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #277b60;
 }
 
 footer {

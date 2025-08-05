@@ -47,7 +47,6 @@ export function TeamMemberCard({ member, onViewProfile }) {
         
         <div className="mt-auto">
           <Button 
-            variant="outline-primary" 
             size="sm"
             onClick={() => onViewProfile(member)}
             className="w-100"
@@ -169,7 +168,7 @@ export function TeamFilter({ roles, selectedRole, onRoleChange }) {
       <h5>Filter by Role</h5>
       <div className="d-flex flex-wrap gap-2">
         <Button
-          variant={selectedRole === 'all' ? 'primary' : 'outline-primary'}
+          variant={selectedRole === 'all' ? 'primary' : 'secondary'}
           size="sm"
           onClick={() => onRoleChange('all')}
         >
@@ -178,7 +177,7 @@ export function TeamFilter({ roles, selectedRole, onRoleChange }) {
         {roles.map((role) => (
           <Button
             key={role}
-            variant={selectedRole === role ? 'primary' : 'outline-primary'}
+            variant={selectedRole === role ? 'primary' : 'secondary'}
             size="sm"
             onClick={() => onRoleChange(role)}
           >

@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 function Home() {
   return (
     <>
-      {}
+      {/* Hero Section */}
       <div className="bg-primary text-white py-5 mb-5">
         <Container>
           <Row className="align-items-center">
@@ -17,7 +17,7 @@ function Home() {
                 production experience. Where creativity meets cinema.
               </p>
               <LinkContainer to="/join">
-                <Button variant="light" size="lg" className="me-3">
+                <Button color="green" size="lg" className="me-3">
                   Join Our Club
                 </Button>
               </LinkContainer>
@@ -28,17 +28,21 @@ function Home() {
               </LinkContainer>
             </Col>
             <Col lg={6} className="text-center">
-              <div className="bg-secondary rounded p-5">
-                <h2>🎬</h2>
-                <p>Highlight Reel Coming Soon</p>
-                <small></small>
+              <div className="bg-secondary rounded">
+                <Card.Img 
+                  variant="top" 
+                  src={'https://i.ytimg.com/an_webp/rgN2efsAD0Y/mqdefault_6s.webp?du=3000&sqp=COLExcQG&rs=AOn4CLBpyvm9r3oDJTr7pEIzTd1m7hlQqg'} 
+                  alt={`Highlight Reel`}
+                  className="rounded" // Add this
+                  style={{ height: '200px', objectFit: 'cover' }}
+                />
               </div>
             </Col>
           </Row>
         </Container>
       </div>
 
-      {}
+      {/* Quick Links Section */}
       <Container>
         <Row className="mb-5">
           <Col md={4} className="mb-4">

@@ -12,13 +12,13 @@ function Team() {
     {
       id: 1,
       name: "Alfonso Cuarón",
-      role: "President & Director",
+      role: "Director",
       year: "Senior",
       major: "Film Studies",
       minor: "Philosophy",
       bio: "Visionary director known for innovative cinematography and intimate storytelling. Specializes in long takes and immersive visual experiences.",
       fullBio: "Alfonso brings a unique vision that combines technical mastery with deeply human stories. Known for pushing the boundaries of cinematography and creating immersive worlds that draw audiences into the narrative. His approach to filmmaking emphasizes the importance of visual storytelling and the power of the moving camera.",
-      specialties: ["Directing", "Cinematography", "Visual Storytelling"],
+      specialties: ["President", "Directing", "Cinematography", "Visual Storytelling"],
       isLeadership: true,
       gradientColors: ["#667eea", "#764ba2"],
       achievements: [
@@ -33,7 +33,7 @@ function Team() {
     {
       id: 2,
       name: "Nobuhiko Obayashi",
-      role: "Vice President & Experimental Director",
+      role: "Experimental Director",
       year: "Senior",
       major: "Media Arts",
       bio: "Master of surreal and experimental cinema. Known for blending genres and creating dreamlike visual experiences.",
@@ -53,7 +53,7 @@ function Team() {
     {
       id: 3,
       name: "Luca Guadagnino",
-      role: "Secretary & Intimacy Director",
+      role: "Intimacy Director",
       year: "Junior",
       major: "Art History",
       minor: "Literature",
@@ -139,8 +139,8 @@ function Team() {
   const leaders = teamMembers.filter(member => member.isLeadership)
   const regularMembers = teamMembers.filter(member => !member.isLeadership)
   
-  const roles = [...new Set(teamMembers.map(member => member.role.split(' & ')[0]))]
-  
+const roles = [...new Set(teamMembers.slice(3).map(member => member.role))]
+
   const filteredMembers = selectedRole === 'all' 
     ? regularMembers 
     : regularMembers.filter(member => member.role.toLowerCase().includes(selectedRole.toLowerCase()))
@@ -223,7 +223,7 @@ function Team() {
               Every skill level and background is welcome in our creative community.
             </p>
             <div className="d-flex gap-3 justify-content-center">
-              <a href="#/join" className="btn btn-light btn-lg">
+              <a href="#/join" className="btn btn-light btn-lg" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
                 Join Qindeel Today
               </a>
               <a href="#/projects" className="btn btn-outline-light btn-lg">
